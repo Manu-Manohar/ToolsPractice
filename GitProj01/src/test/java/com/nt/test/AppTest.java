@@ -16,5 +16,13 @@ public class AppTest
 		int actual=arr.sum(20, 10);
 		assertEquals(expected,actual);
 	}
+	@Test
+	public void testWithNegative()
+	{
+		ArithematicApp arr=new ArithematicApp();
+		int expected=-30;
+		int actual=arr.sum(-20, -10);
+		assertEquals(expected,actual);
+	}
 
 }
